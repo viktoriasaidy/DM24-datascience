@@ -1,2 +1,2 @@
 print ("hello, World!")
-print ("Hej, Viktoria!")
+print ("hej, mitt namn är Viktoria")
