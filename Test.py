@@ -81,12 +81,11 @@
 # print (text[:6])
 
 # text = "Python är Kul!"
-print (text.upper())
-print (text.strip())
-print (text.replace("Kul", "fantastisk"))
-#
+# print (text.upper())
+# print (text.strip())
+# print (text.replace("Kul", "fantastisk"))
 
-namn = input ("Vad heter du?: ")
-ålder = input ("Hur gammal är du?: ")
-print (f"Hej, {namn}! Du är {ålder} år gammal")
+# namn = input ("Vad heter du?: ")
+# ålder = input ("Hur gammal är du?: ")
+# print (f"Hej, {namn}! Du är {ålder} år gammal")
 
