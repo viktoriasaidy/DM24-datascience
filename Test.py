@@ -60,3 +60,8 @@ x = Decimal("0.1")
 y = Decimal("0.2")
 resultat = x + y 
 print (resultat)
+
+x = "122"
+y = "50"
+summa = int(x) + int(y)
+print (f"summan är: {summa}")
