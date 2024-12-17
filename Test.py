@@ -70,3 +70,7 @@ x = input ("vad heter du?: ")
 y = input ("Glöm inte ditt efternamn! ")
 svar = str(x) + str(y)
 print (f"Välkommen! {svar}")
+
+x = 42
+text = "talet är: " + str(x)
+print (text)
