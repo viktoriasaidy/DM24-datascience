@@ -48,6 +48,9 @@
 # x = int(pi)
 # print (y)
 
-heltal = 5
-y = float(heltal)
-print (y)
+# heltal = 5
+# y = float(heltal)
+# print (y)
+
+resultat = round(0.1 + 0.2, 2)
+print (resultat)
