@@ -61,7 +61,12 @@ y = Decimal("0.2")
 resultat = x + y 
 print (resultat)
 
-x = "122"
-y = "50"
+x = input ("ange ett tal: ")
+y = input ("ange ett tal: ")
 summa = int(x) + int(y)
 print (f"summan är: {summa}")
+
+x = input ("vad heter du?: ")
+y = input ("Glöm inte ditt efternamn! ")
+svar = str(x) + str(y)
+print (f"Välkommen! {svar}")
