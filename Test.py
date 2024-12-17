@@ -7,6 +7,7 @@ name = "Viktoria"
 age = 29
 print (f"Welcome, {name}! You are {age} years old.")
 
+
 x = 10
 y = 20
 z = (x + y)
@@ -21,3 +22,13 @@ print(type(heltal))
 print(type(flyttal))
 print(type(text))
 print(type(sanningsvärde))
+
+x = 42
+y = str(x)
+print (y)
+print (type(y))
+
+x = "123"
+y = 2
+z = int(x)
+print (z * y)
