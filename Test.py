@@ -66,14 +66,27 @@
 # summa = int(x) + int(y)
 # print (f"summan är: {summa}")
 
-x = input ("vad heter du? ")
-y = input ("Glöm inte ditt efternamn! ")
-svar = str(x) + " " + str(y)
-print (f"Välkommen! {svar}")
+# x = input ("vad heter du? ")
+# y = input ("Glöm inte ditt efternamn! ")
+# svar = str(x) + " " + str(y)
+# print (f"Välkommen! {svar}")
 
-x = 42
-text = "talet är: " + str(x)
-print (text)
+# x = 42
+# text = "talet är: " + str(x)
+# print (text)
 
+# text = "Data Science"
+# print (text[0])
+# print (text[-1])
+# print (text[:6])
 
+# text = "Python är Kul!"
+print (text.upper())
+print (text.strip())
+print (text.replace("Kul", "fantastisk"))
+#
+
+namn = input ("Vad heter du?: ")
+ålder = input ("Hur gammal är du?: ")
+print (f"Hej, {namn}! Du är {ålder} år gammal")
 
