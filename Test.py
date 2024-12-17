@@ -48,6 +48,6 @@
 # x = int(pi)
 # print (y)
 
-x = 5
-y = float(x)
+heltal = 5
+y = float(heltal)
 print (y)
