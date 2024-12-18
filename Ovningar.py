@@ -23,6 +23,10 @@ print(heltal)
 summa = sum(heltal)
 print(summa)
 
+print(sum(heltal))
+
 #Skapa en lista med namn och sök efter ett namn med en for-loop
-namnLista = ["Anna", "Peter", "Saga", "Elsa", "Martin"]
-print(namnLista[2])
+nameList = ["Anna", "Peter", "Saga", "Elsa", "Martin"]
+for name in nameList:
+    if name == "Peter":
+        print("Name found" + " " + name)
