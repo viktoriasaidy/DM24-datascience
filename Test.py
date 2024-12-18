@@ -89,3 +89,7 @@
 # ålder = input ("Hur gammal är du?: ")
 # print (f"Hej, {namn}! Du är {ålder} år gammal")
 
+try:
+    x = int("hej")
+except:
+    print("Ett fel uppstod")
