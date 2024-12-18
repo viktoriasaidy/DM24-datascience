@@ -89,7 +89,16 @@
 # ålder = input ("Hur gammal är du?: ")
 # print (f"Hej, {namn}! Du är {ålder} år gammal")
 
-try:
-    x = int("hej")
-except:
-    print("Ett fel uppstod")
+#try:
+#    x = int("hej")
+#except:
+#    print("Ett fel uppstod")
+
+
+reallyLongList = ["äpple", "banan", "körsbär", "druva", "apelsin", "päron", "kiwi", "mango", "passionsfrukt", "ananas"]
+
+for i, fruit in enumerate(reallyLongList):
+    if i == (i+1):
+        continue
+    if (i+1) % 3 == 0:
+        print(fruit)
