@@ -75,31 +75,31 @@ x = 42
 text = "talet är: " + str(x)
 print (text)
 
-# text = "Data Science"
-# print (text[0])
-# print (text[-1])
-# print (text[:6])
+text = "Data Science"
+print (text[0])
+print (text[-1])
+print (text[:6])
 
-# text = "Python är Kul!"
-# print (text.upper())
-# print (text.strip())
-# print (text.replace("Kul", "fantastisk"))
+text = "Python är Kul!"
+print (text.upper())
+print (text.strip())
+print (text.replace("Kul", "fantastisk"))
 
-# namn = input ("Vad heter du?: ")
-# ålder = input ("Hur gammal är du?: ")
-# print (f"Hej, {namn}! Du är {ålder} år gammal")
+namn = input ("Vad heter du?: ")
+ålder = input ("Hur gammal är du?: ")
+print (f"Hej, {namn}! Du är {ålder} år gammal")
 
-#try:
-#    x = int("hej")
-#except:
-#    print("Ett fel uppstod")
+try:
+    x = int("hej")
+except:
+    print("Ett fel uppstod")
 
 
-# reallyLongList = ["äpple", "banan", "körsbär", "druva", "apelsin", "päron", "kiwi", "mango", "passionsfrukt", "ananas"]
+reallyLongList = ["äpple", "banan", "körsbär", "druva", "apelsin", "päron", "kiwi", "mango", "passionsfrukt", "ananas"]
 
-#for i, fruit in enumerate(reallyLongList):
-#    if i == (i+1):
-#        continue
-#    if (i+1) % 3 == 0:
-#        print(fruit)
+for i, fruit in enumerate(reallyLongList):
+    if i == (i+1):
+        continue
+    if (i+1) % 3 == 0:
+        print(fruit)
 
