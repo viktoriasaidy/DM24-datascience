@@ -31,3 +31,21 @@ for name in nameList:
     if name == "Peter":
         print("Name found" + " " + name)
 
+#Skapa en dictionary för en produkt
+product = {
+    "name": "Laptop",
+    "price": 1000,
+    "inStock": 50
+}
+print(product)
+
+#1. Skriv ut produktens pris
+print(product["price"])
+
+#2. Lägg till en nyckel för "kategori"
+product["category"] = "computers"
+print(product)
+
+#3. Ändra värdet på "lager" till 40
+product["inStock"] = 40
+print(product)
