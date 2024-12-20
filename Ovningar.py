@@ -67,3 +67,12 @@ for value in person.values():
 
 for key, value in person.items():
     print(f"Persons {key}: is {value}")
+
+
+#Skriv en while-loop som frågar användaren om ett lösenord tills rätt lösenord anges
+password = ""
+while password != "hejdå":
+    password = input("ange lösenord ")
+    print ("Fel lösenord, försök igen")
+    if password == "hejdå":
+        print("Du loggas in")
