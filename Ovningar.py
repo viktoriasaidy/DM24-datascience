@@ -49,3 +49,21 @@ print(product)
 #3. Ändra värdet på "lager" till 40
 product["inStock"] = 40
 print(product)
+
+#Skapa en dictionary med tre nyckel-värde-par (e.g., "namn", "ålder", "stad")
+person = {
+    "name": "Viktoria",
+    "age": 29,
+    "city": "Stockholm"
+}
+print(person)
+
+# Iterera genom dictionaryn och skriv ut varje nyckel och värde
+for key in person:
+    print(key)
+
+for value in person.values():
+    print(value)
+
+for key, value in person.items():
+    print(f"Persons {key}: is {value}")
