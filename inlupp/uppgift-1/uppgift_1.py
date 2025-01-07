@@ -6,9 +6,10 @@
 
 def is_odd(number: int) -> bool:
     trueorfalse = number % 2 != 0
-    
+
     return trueorfalse
     
+print(is_odd(1))
 print(is_odd(2))
 print(is_odd(3))
 print(is_odd(4))
