@@ -75,3 +75,9 @@ while password != "hejdå":
     print ("Fel lösenord, försök igen")
     if password == "hejdå":
         print("Du loggas in")
+
+#övning 1 - ålderskontroll
+
+#övning 2 - intervaller
+
+#övning 3 - 
