@@ -5,7 +5,8 @@
 # Förklaring: Funktionens namn är is_odd och tar en parameter x av datatypen int. Funktionen returnerar en bool.
 
 def is_odd(number: int) -> bool:
-    trueorfalse = number % 2 == 0
+    trueorfalse = number % 2 != 0
+    
     return trueorfalse
     
 print(is_odd(2))
