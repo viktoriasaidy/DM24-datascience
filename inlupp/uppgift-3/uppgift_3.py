@@ -1,8 +1,11 @@
 # Uppgift 3
 # Hitta det största talet i en lista
 
-def funktions_namn(variabel_namn: datatyp) -> returtyp:
+def max_in_list(number):
     """
     Skriv beskrivning här.
     """
-    pass # Ta bort denna rad och skriv din kod här
+    return max(number)
+number = [1, 2, 3]
+
+print(max_in_list(number))
