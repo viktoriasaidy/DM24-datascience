@@ -1,8 +1,12 @@
 # Uppgift 2
 # Skapa en funktion sum_list(numbers) som returnerar summan av alla siffror i listan.
 
-def funktions_namn(variabel_namn: datatyp) -> returtyp:
+def sum_list(numbers):
     """
     Skriv beskrivning här.
     """
-    pass # Ta bort denna rad och skriv din kod här
+    return sum(numbers)
+
+numbers = [1, 2, 3, 4, 5, 6]
+print(sum_list(numbers))
+
