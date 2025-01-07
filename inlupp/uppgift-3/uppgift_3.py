@@ -8,4 +8,4 @@ def max_in_list(number):
     return max(number)
 number = [1, 2, 3]
 
-print(max_in_list(number))
+print(max_in_list(number)) 
