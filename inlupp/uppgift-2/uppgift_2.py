@@ -8,5 +8,5 @@ def sum_list(numbers):
     return sum(numbers)
 
 numbers = [1, 2, 3, 4, 5, 6]
-print(sum_list(numbers))
+print(sum_list(numbers)) #output 21
 
