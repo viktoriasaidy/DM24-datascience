@@ -15,8 +15,6 @@ print("drop")
 df = df.dropna()
 print(df)
 
-# # Skapa ny kolumn baserat på beräkningar eller villkor.
-# df["Total röster"] = df[""] + df["2010"] + df["2006"]
-# print(df)
-
-# print(df.columns)
+# Totalt matavfall per år INSIKT!!!!!!
+matavfall_per_år = df.groupby('År')['Andel matavfall som behandlas biologiskt, %'].sum().reset_index()
+print(matavfall_per_år)
