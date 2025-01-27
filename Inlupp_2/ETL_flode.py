@@ -15,6 +15,6 @@ print("drop")
 df = df.dropna()
 print(df)
 
-# Totalt matavfall per år INSIKT!!!!!!
+# Totalt matavfall per år (Se word dokument för analys)
 matavfall_per_år = df.groupby('År')['Andel matavfall som behandlas biologiskt, %'].sum().reset_index()
 print(matavfall_per_år)
