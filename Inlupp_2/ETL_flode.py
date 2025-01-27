@@ -51,3 +51,6 @@ df["Län"] = df["Kommun/ förbund"].map(kommun_till_län)
 print(kommun_till_län)
 # df.to_csv("kommun_till_län.csv", index=False)
 
+#Exportera till excel
+matavfallGenomsnitt = r"C:\Users\vikto\OneDrive\Dokument\DATA MANAGER 2024\matavfallGenomsnitt.xlsx"
+matavfall_genomsnitt.to_excel(matavfallGenomsnitt, index=False)
