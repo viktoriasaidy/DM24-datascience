@@ -18,3 +18,9 @@ print(df)
 # Totalt matavfall per år (Se word dokument för analys)
 matavfall_per_år = df.groupby('År')['Andel matavfall som behandlas biologiskt, %'].sum().reset_index()
 print(matavfall_per_år)
+
+# Vilket år presterade enskilda kommuner högst i andel matavfall behandlat biologiskt? (Se word dokument för analys)
+kommun_med_högst_matavfall = df.groupby(['Kommun/ förbund', 'År'])['Andel matavfall som behandlas biologiskt, %'].sum().reset_index()
+bäst_presterande_år_per_kommun = kommun_med_högst_matavfall.loc[kommun_med_högst_matavfall.groupby('Kommun/ förbund')['Andel matavfall som behandlas biologiskt, %'].idxmax()]
+print(bäst_presterande_år_per_kommun)
+
