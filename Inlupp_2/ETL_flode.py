@@ -15,12 +15,39 @@ print("drop")
 df = df.dropna()
 print(df)
 
-# Totalt matavfall per år (Se word dokument för analys)
+# Totalt matavfall per år (Se pdf dokument för analys)
 matavfall_per_år = df.groupby('År')['Andel matavfall som behandlas biologiskt, %'].sum().reset_index()
 print(matavfall_per_år)
+# matavfall_per_år.to_csv("matavfall_per_år.csv", index=False)
 
-# Vilket år presterade enskilda kommuner högst i andel matavfall behandlat biologiskt? (Se word dokument för analys)
+# Vilket år presterade enskilda kommuner högst i andel matavfall behandlat biologiskt? (Se pdf dokument för analys)
 kommun_med_högst_matavfall = df.groupby(['Kommun/ förbund', 'År'])['Andel matavfall som behandlas biologiskt, %'].sum().reset_index()
 bäst_presterande_år_per_kommun = kommun_med_högst_matavfall.loc[kommun_med_högst_matavfall.groupby('Kommun/ förbund')['Andel matavfall som behandlas biologiskt, %'].idxmax()]
 print(bäst_presterande_år_per_kommun)
+# bäst_presterande_år_per_kommun.to_csv("kommun_med_högst_matavfall.csv", index=False)
+
+# År med sämst prestering (Se pdf dokument för analys)
+kommun_med_lägst_matavfall = df.groupby(['Kommun/ förbund', 'År'])['Andel matavfall som behandlas biologiskt, %'].sum().reset_index()
+sämst_presterande_år_per_kommun = kommun_med_lägst_matavfall.loc[kommun_med_lägst_matavfall.groupby('Kommun/ förbund')['Andel matavfall som behandlas biologiskt, %'].idxmin()]
+print(sämst_presterande_år_per_kommun)
+# sämst_presterande_år_per_kommun.to_csv("sämst_presterande_år_per_kommun.csv", index=False)
+
+# Hur presterar kommunerna i genomsnitt? (Se pdf dokument för analys)
+matavfall_genomsnitt = df.groupby('Kommun/ förbund')['Andel matavfall som behandlas biologiskt, %'].mean().reset_index()
+matavfall_genomsnitt = matavfall_genomsnitt.sort_values(by='Andel matavfall som behandlas biologiskt, %', ascending=False)
+print(matavfall_genomsnitt)
+# matavfall_genomsnitt.to_csv("matavfall_genomsnitt.csv", index=False)
+
+# Skapa en ny kolumn 'Län' som innehåller länets namn för varje kommun.
+kommun_till_län = {
+    "Nordmaling": "Västerbottens län",
+    "Bjurholm": "Västerbottens län",
+    "Umeå": "Västerbottens län",
+    "Robertsfors": "Västerbottens län",
+    "Vindeln": "Västerbottens län",
+    "Vännäs": "Västerbottens län"
+}
+df["Län"] = df["Kommun/ förbund"].map(kommun_till_län)
+print(kommun_till_län)
+# df.to_csv("kommun_till_län.csv", index=False)
 
