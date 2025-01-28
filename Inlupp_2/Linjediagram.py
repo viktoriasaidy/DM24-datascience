@@ -13,7 +13,7 @@ print(matavfall_per_år)
 plt.figure(figsize=(10, 6))
 plt.plot(matavfall_per_år['År'], matavfall_per_år['Andel matavfall som behandlas biologiskt, %'])
 
-# Lägg till etiketter och titel
+# Linjediagram
 plt.xlabel('År')
 plt.ylabel('Andel matavfall som behandlas biologiskt, %')
 plt.title('Andel matavfall behandlat biologiskt per år')

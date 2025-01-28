@@ -14,6 +14,7 @@ print(df.isnull().values.any()) # Output: True
 print("drop")
 df = df.dropna()
 print(df)
+# df.to_csv("rensadData.csv", index=False)
 
 # Totalt matavfall per år (Se pdf dokument för analys)
 matavfall_per_år = df.groupby('År')['Andel matavfall som behandlas biologiskt, %'].sum().reset_index()
